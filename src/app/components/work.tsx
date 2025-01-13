@@ -25,22 +25,31 @@ export default function Work() {
       src: "assets/videomapping.jpeg",
       alt: "Image 4",
       title: "Title 4",
-    }
+    },
   ];
 
   return (
-    <div className="pt-4 pb-4">
-      {/* Mapping data */}
-      {workItems.map(item => (
-        <div key={item.id} className="flex flex-col items-center p-4 m-4">
-          <img
-            src={item.src}
-            alt={item.alt}
-            className="w-[70vw] h-auto object-cover rounded-lg"
-          />
-          <h1 className="text-left pt-5 w-[70vw]">{item.title}</h1>
-        </div>
-      ))}
+    <div className="flex justify-center items-center h-screen ">
+      {/* Container Carousel */}
+      <div className="h-[700px] overflow-y-scroll snap-y snap-mandatory no-scrollbar">
+        {workItems.map((item) => (
+          <div
+            key={item.id}
+            className="h-[700px] flex flex-col items-center justify-start snap-center"
+          >
+            {/* Gambar */}
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="w-[70vw] h-[400px] object-cover rounded-lg shadow-lg"
+            />
+            {/* Judul */}
+            <h1 className="text-left pt-5 w-[70vw] text-xl font-semibold">
+              {item.title}
+            </h1>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
