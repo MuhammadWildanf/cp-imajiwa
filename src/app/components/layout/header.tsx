@@ -5,10 +5,10 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Works', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'HOME', href: '#' },
+  { name: 'ABOUT', href: '#' },
+  { name: 'WORKS', href: '#' },
+  { name: 'CONTACT', href: '#' },
 ]
 
 export default function Header() {
@@ -20,11 +20,12 @@ export default function Header() {
         <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8 max-w-screen-xl mx-auto">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only text-white">Your Company</span>
+              <span className="sr-only text-white">IMAJIWA</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                src="https://imajiwa.id/wp-content/uploads/2018/07/logogram-white.png"
+                width={65}
+                height={65}
               />
             </a>
           </div>
@@ -40,7 +41,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
+              <a key={item.name} href={item.href} className="font-sans text-white">
                 {item.name}
               </a>
             ))}
@@ -51,11 +52,12 @@ export default function Header() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only text-white">Your Company</span>
+                <span className="sr-only text-white">IMAJIWA</span>
                 <img
                   alt=""
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                  src="https://imajiwa.id/wp-content/uploads/2018/07/logogram-white.png"
+                  width={65}
+                  height={65}
                 />
               </a>
               <button
@@ -69,7 +71,7 @@ export default function Header() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="space-y-2 text-center py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}

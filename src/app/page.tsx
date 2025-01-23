@@ -1,14 +1,13 @@
-import Image from "next/image";
-import Hero from "./components/hero";
-import Work from "./components/work";
-import CTA from "./components/cta";
+import Hero from "./components/Hero/hero";
+import CTA from "./components/Cta/cta";
+import MyWork from "./components/Mywork/mywork";
 
 export default function Home() {
   return (
    <div>
     <Hero/>
-    <Work/>
-    <CTA/>
+    <MyWork/>
+    {/* <CTA/> */}
    </div>
   );
 }
