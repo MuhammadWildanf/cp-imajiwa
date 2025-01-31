@@ -1,0 +1,25 @@
+
+@keyframes infinite-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-infinite-scroll {
+    display: flex;
+    white-space: nowrap;
+    animation: infinite-scroll 300s linear infinite; /* Durasi animasi diperpanjang */
+    will-change: transform; /* Optimisasi untuk performa */
+}
+
+
+
+.teks-outline-white {
+    margin-right: 0.23vw;
+    color: transparent;
+    -webkit-text-stroke-width: 0.07vw;
+    -webkit-text-stroke-color: white;
+}

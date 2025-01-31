@@ -46,6 +46,17 @@ export default function Hero() {
                         scene="https://prod.spline.design/1xeNRvVyXMAERw9Z/scene.splinecode"
                     />
             </div>
+
+            {/* hero overlay */}
+            <div
+                className="hero-overlay absolute inset-[95%_0_0_0]"
+                style={{
+                    backgroundImage: 'linear-gradient(180deg, transparent, black)',
+                    opacity: 1,
+                    color: 'white',
+                }}
+            />
+
         </div>
     );
 }
